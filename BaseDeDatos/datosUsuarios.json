@@ -1,0 +1,112 @@
+{
+    "datosUsuarios": [
+      {
+        "usuario": "jakub",
+        "nombre": "Iago",
+        "apellidos": "Feijoo Rey",
+        "email": "iago@ejemplo.com",
+        "telefono": "123456789",
+        "fechaNacimiento": "1990-01-01",
+        "ubicacion": "Calle de Iago, 123",
+        "acercaDeMi": "Aficionado al deporte en general y seguidor del Celta desde peque\u00f1o. Me gusta comentar los partidos y participar en las quinielas.",
+        "equipoFavorito": "Celta de Vigo",
+        "equipos": "Real Madrid, Barcelona, Atletico de Madrid"
+      },
+      {
+        "usuario": "jorge",
+        "nombre": "Jorge",
+        "apellidos": "gonzalez Corbelle",
+        "email": "jorge@ejemplo.com",
+        "telefono": "987654321",
+        "fechaNacimiento": "1992-05-12",
+        "ubicacion": "Calle de Jorge, 456",
+        "acercaDeMi": "Apasionado del f\u00fatbol y seguidor del Real Madrid. Me gusta analizar jugadas y debatir sobre el juego.",
+        "equipoFavorito": "Real Madrid",
+        "equipos": "Real Madrid, Sevilla, Valencia"
+      },
+      {
+        "usuario": "pablo",
+        "nombre": "Juan Pablo",
+        "apellidos": "Martinez Martinez",
+        "email": "pablo@ejemplo.com",
+        "telefono": "654321987",
+        "fechaNacimiento": "1988-08-20",
+        "ubicacion": "Calle de Pablo, 789",
+        "acercaDeMi": "Fan\u00e1tico del Barcelona desde la infancia. Me encanta seguir las estad\u00edsticas y tendencias del equipo.",
+        "equipoFavorito": "Barcelona",
+        "equipos": "Barcelona, Villarreal, Betis"
+      },
+      {
+        "usuario": "miguel",
+        "nombre": "Miguel",
+        "apellidos": "Escobar Gonzalez",
+        "email": "miguel@ejemplo.com",
+        "telefono": "123123123",
+        "fechaNacimiento": "1995-02-18",
+        "ubicacion": "Calle de Miguel, 321",
+        "acercaDeMi": "Seguidor fiel del Atletico de Madrid. Disfruto de cada partido y me gusta compartir opiniones sobre el equipo.",
+        "equipoFavorito": "Atletico de Madrid",
+        "equipos": "Atletico de Madrid, Celta de Vigo, Getafe"
+      },
+      {
+        "usuario": "javi",
+        "nombre": "Javier",
+        "apellidos": "Garcia Rey",
+        "email": "javi@ejemplo.com",
+        "telefono": "789789789",
+        "fechaNacimiento": "1991-11-30",
+        "ubicacion": "Calle de Javi, 654",
+        "acercaDeMi": "Me gusta seguir la liga y ver los partidos de diferentes equipos. Disfruto comentando y analizando el juego.",
+        "equipoFavorito": "Sevilla",
+        "equipos": "Sevilla, Athletic Club, Osasuna"
+      },
+      {
+        "usuario": "arianeera",
+        "nombre": "Arianeé",
+        "apellidos": "Ruiz Amabilis",
+        "email": "ari@ejemplo.com",
+        "telefono": "456456456",
+        "fechaNacimiento": "1993-07-25",
+        "ubicacion": "Calle de Ari, 852",
+        "acercaDeMi": "Fan de LaLiga y seguidor del Betis. Me gusta ver los partidos con amigos y disfrutar del f\u00fatbol.",
+        "equipoFavorito": "Betis",
+        "equipos": "Betis, Barcelona, Real Sociedad"
+      },
+      {
+        "usuario": "paula",
+        "nombre": "paula",
+        "apellidos": "Del Valle Marín",
+        "email": "paula@ejemplo.com",
+        "telefono": "321321321",
+        "fechaNacimiento": "1994-09-14",
+        "ubicacion": "Calle de Paula, 951",
+        "acercaDeMi": "Seguidora del Valencia desde hace a\u00f1os. Me gusta leer noticias sobre el equipo y estar informada sobre fichajes.",
+        "equipoFavorito": "Valencia",
+        "equipos": "Valencia, Levante, Espanyol"
+      },
+      {
+        "usuario": "iria",
+        "nombre": "Feijóo Rey",
+        "apellidos": "apellido de iria",
+        "email": "iria@ejemplo.com",
+        "telefono": "852852852",
+        "fechaNacimiento": "1996-12-05",
+        "ubicacion": "Calle de Iria, 147",
+        "acercaDeMi": "Amante del f\u00fatbol y seguidora de la Real Sociedad. Me gusta participar en foros y hacer predicciones sobre los partidos.",
+        "equipoFavorito": "Real Sociedad",
+        "equipos": "Real Sociedad, Alav\u00e9s, Granada"
+      },
+      {
+        "usuario": "admin",
+        "nombre": "Administrador",
+        "apellidos": "El mas pro",
+        "email": "admin@ejemplo.com",
+        "telefono": "000000000",
+        "fechaNacimiento": "2000-01-01",
+        "ubicacion": "Calle del Administrador, 000",
+        "acercaDeMi": "Administrador del sistema. Encargado de la gesti\u00f3n y mantenimiento de la plataforma.",
+        "equipoFavorito": "-",
+        "equipos": "-"
+      }
+    ]
+}

@@ -1,0 +1,10 @@
+section { 
+    float: left; 
+    flex: 60%;
+    /* width: 1490px; */
+    background-color: transparent; 
+    padding: 30px; 
+    box-sizing: border-box; 
+    border: solid 1px var(--gray-color); 
+    box-shadow: 2px 2px 5px var(--gray-color); 
+}

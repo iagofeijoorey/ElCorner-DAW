@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="deportes, fútbol, baloncesto, tenis, perfil, usuario, el corner">
+        <meta name="description" content="Perfil de usuario de El Corner - portal deportivo">
+        <meta name="author" content="El Córner by Jorge & Iago">
+        <title>El Corner - Perfil</title>
+        <link rel="stylesheet" href="./Estilos/Estilos.css">
+        <link rel="stylesheet" href="./Estilos/cssProfile/profileEstilos.css">
+    
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="./JavaScript/perfil.js"></script>
+    </head>
+    
+    
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- --------------------------------------------------    BODY    ----------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+    
+    
+    <body>
+        
+        <!-- --------------------------------------------------    NAV    ------------------------------------------------------------ -->
+        <nav class="menu">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="opciones">
+                <img src="../Imagenes/elementos_pagina_web/barras.png" width="40" height="40" alt="Menu">
+            </label>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../Imagenes/elementos_pagina_web/logo.png" width="60" height="60" alt="ElCorner_Logo">
+                </a>
+                El Córner
+            </div>
+            <ul class="list">
+                <li><a href="./Deportes.html">Deportes</a></li>
+                <li><a href="./Equipos.html">Equipos</a></li>
+                <li><a href="./Resultados.html">Resultados</a></li>
+                <li><a href="./Noticias.html">Noticias</a></li>
+                <li><a href="./Multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav>
+    
+    
+    
+        <!-- --------------------------------------------------    MAIN    ------------------------------------------------------------ -->
+    
+        <main>
+            <div class="profile-container">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <img src="../Imagenes/elementos_pagina_web/avatar.png" alt="Avatar de usuario">
+                        <button class="change-avatar">Cambiar</button>
+                    </div>
+                    <div class="profile-info">
+                        <h1 id="username-display">Usuario Demo</h1>
+                        <p>Miembro desde: Marzo 2025</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Equipos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">42</span>
+                                <span class="stat-label">Comentarios</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Ligas</span>
+                            </div>
+                        </div>
+                        <!-- Añadir botón de cerrar sesión -->
+                        <div class="profile-actions">
+                            <button id="cerrar-sesion" class="cerrar-sesion">Cerrar sesión</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-tabs">
+                    <div class="tab active" data-tab="info">Información</div>
+                    <div class="tab" data-tab="equipos">Mis Equipos</div>
+                    <div class="tab" data-tab="preferencias">Preferencias</div>
+                    <div class="tab" data-tab="historial">Historial</div>
+                </div>
+            
+                <!-- Contenido de las pestañas -->
+                <div class="tab-content">
+                    <!-- Tab: Información -->
+                    <div class="tab-pane active" id="info">
+                        <h2>Información Personal</h2>
+                        <form class="profile-form">
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" value="Usuario" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidos">Apellidos:</label>
+                                <input type="text" id="apellidos" name="apellidos" value="Apellido1, Apellido2" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" value="usuarioDeEjemplo@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" value="123456789">
+                            </div>
+                            <div class="form-group">
+                                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" value="2004-09-26">
+                            </div>
+                            <div class="form-group">
+                                <label for="ubicacion">Ubicación:</label>
+                                <input type="text" id="ubicacion" name="ubicacion" value="Vigo, España">
+                            </div>
+                            <div class="form-group">
+                                <label for="bio">Acerca de mí:</label>
+                                <textarea id="bio" name="bio" rows="4">Aficionado al deporte en general y seguidor del Celta desde pequeño. Me gusta comentar los partidos y participar en las quinielas.</textarea>
+                            </div>
+                            <button type="submit" class="save-button">Guardar Cambios</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Tab: Mis Equipos -->
+                    <div class="tab-pane" id="equipos">
+                        <h2>Equipos Favoritos</h2>
+                        <div class="teams-grid">
+                            <div class="team-card">
+                                <img src="../Imagenes/logos_equipos/Futbol/Celta.png" alt="Celta de Vigo" width="80" height="80">
+                                <h3>Celta de Vigo</h3>
+                                <span class="favorite-tag">Favorito</span>
+                            </div>
+                            <div class="team-card">
+                                <img src="../Imagenes/logos_equipos/Futbol/madrid.png" alt="Real Madrid" width="80" height="80">
+                                <h3>Real Madrid</h3>
+                            </div>
+                            <div class="team-card">
+                                <img src="../Imagenes/logos_equipos/Futbol/juventusLogo.png" alt="Juventus" width="80" height="80">
+                                <h3>Juventus FC</h3>
+                            </div>
+                            <div class="team-card">
+                                <img src="../Imagenes/elementos_pagina_web/avatar.png" alt="Placeholder" width="80" height="80">
+                                <h3>Añadir Equipo</h3>
+                                <button class="add-team">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab: Preferencias -->
+                    <div class="tab-pane" id="preferencias">
+                        <h2>Preferencias de Usuario</h2>
+                        <form class="preferences-form">
+                            <div class="preference-section">
+                                <h3>Notificaciones</h3>
+                                <div class="form-check">
+                                    <input type="checkbox" id="notif-email" name="notif-email">
+                                    <label for="notif-email">Recibir notificaciones por email</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" id="notif-web" name="notif-web" checked>
+                                    <label for="notif-web">Notificaciones web</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" id="notif-resultados" name="notif-resultados" checked>
+                                    <label for="notif-resultados">Alertas de resultados</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" id="notif-noticias" name="notif-noticias" checked>
+                                    <label for="notif-noticias">Noticias importantes</label>
+                                </div>
+                            </div>
+                            
+                            <div class="preference-section">
+                                <h3>Privacidad</h3>
+                                <div class="form-check">
+                                    <input type="checkbox" id="perfil-publico" name="perfil-publico" checked>
+                                    <label for="perfil-publico">Perfil público</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" id="mostrar-equipos" name="mostrar-equipos" checked>
+                                    <label for="mostrar-equipos">Mostrar mis equipos favoritos</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" id="mostrar-comentarios" name="mostrar-comentarios" checked>
+                                    <label for="mostrar-comentarios">Mostrar mis comentarios</label>
+                                </div>
+                            </div>
+                            
+                            <div class="preference-section">
+                                <h3>Apariencia</h3>
+                                <div class="form-group">
+                                    <label for="tema">Tema:</label>
+                                    <select id="tema" name="tema">
+                                        <option value="claro" selected>Claro</option>
+                                        <option value="oscuro">Oscuro</option>
+                                        <option value="auto">Automático (según sistema)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="save-button">Guardar Preferencias</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Tab: Historial -->
+                    <div class="tab-pane" id="historial">
+                        <h2>Historial de Actividad</h2>
+                        <div class="activity-filters">
+                            <select id="filter-activity">
+                                <option value="all">Todas las actividades</option>
+                                <option value="comments">Comentarios</option>
+                                <option value="likes">Me gusta</option>
+                                <option value="predictions">Predicciones</option>
+                            </select>
+                        </div>
+                        <div class="activity-timeline">
+                            <div class="activity-item">
+                                <div class="activity-time">12/03/2025 - 14:25</div>
+                                <div class="activity-content">
+                                    <strong>Comentario:</strong> "Gran partido del Real Madrid, especialmente Valverde que estuvo imparable."
+                                    <div class="activity-meta">en <a href="#">Real Madrid vs Atlético</a></div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time">10/03/2025 - 19:12</div>
+                                <div class="activity-content">
+                                    <strong>Me gusta:</strong> "El Albacete sigue de dulce en el Belmonte"
+                                    <div class="activity-meta">en <a href="#">Noticias</a></div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time">08/03/2025 - 09:30</div>
+                                <div class="activity-content">
+                                    <strong>Predicción:</strong> Real Madrid 3-1 Atlético
+                                    <div class="activity-meta">en <a href="#">Quiniela Jornada 4</a></div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time">05/03/2025 - 21:45</div>
+                                <div class="activity-content">
+                                    <strong>Comentario:</strong> "La Juventus tiene que mejorar en defensa si quiere aspirar al título."
+                                    <div class="activity-meta">en <a href="#">Como - Juventus</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <!-- FOOTER -->
+        <!-- --------------------------------------------------    FOOTER    ------------------------------------------------------------ -->
+        <footer>
+            <span class="copyright">&copy; 2025 El Corner - Todos los derechos reservados</span>
+            <span class="about-link"><a href="./aboutus.html">About Us</a></span>
+        </footer><footer>&copy; 2025 El Corner - Todos los derechos reservados</footer>
+    
+    </body>
+</html>

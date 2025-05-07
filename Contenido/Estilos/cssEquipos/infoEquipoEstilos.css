@@ -1,0 +1,356 @@
+main{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.equipo-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+.equipo-header figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.equipo-info {
+    flex: 1;
+}
+
+.equipo-info p {
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contenido-equipo {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.seccion-principal {
+    flex: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+.plantilla-seccion {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+.seccion-principal h2, .plantilla-seccion h2 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.resultado-partido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(249, 249, 249, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.equipo-local, .equipo-visitante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.equipo-local p, .equipo-visitante p {
+    margin-top: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.marcador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.marcador p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.fecha-partido {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.detalles-partido h3 {
+    color: var(--primary-color);
+    margin: 20px 0 15px;
+}
+
+.imagen-partido {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.detalles-partido p {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.alineaciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.alineacion-local, .alineacion-visitante {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.alineacion-local h4, .alineacion-visitante h4 {
+    margin-bottom: 10px;
+    color: var(--dark-bg);
+}
+
+.alineacion-local ul, .alineacion-visitante ul {
+    list-style-type: none;
+}
+
+.alineacion-local li, .alineacion-visitante li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #ddd;
+}
+
+.proximos-partidos {
+    margin-top: 30px;
+}
+
+.proximos-partidos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.proximos-partidos th {
+    background-color: var(--primary-color);
+    color: #f6894c;
+    padding: 10px;
+    text-align: center;
+}
+
+.proximos-partidos td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.proximos-partidos tr:hover {
+    background-color: rgba(41, 165, 211, 0.1);
+}
+
+.imagen-plantilla {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.imagen-plantilla:hover {
+    transform: scale(1.02);
+}
+
+.datos-destacados {
+    margin-top: 30px;
+}
+
+.jugador-destacado {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(249, 249, 249, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.foto-jugador {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.info-jugador h4 {
+    margin: 0 0 8px;
+    color: var(--accent-color);
+}
+
+.info-jugador p {
+    margin: 3px 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.estadisticas-equipo {
+    margin-top: 30px;
+}
+
+.tabla-estadisticas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-estadisticas tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-estadisticas td {
+    padding: 10px;
+}
+
+.tabla-estadisticas td:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+.trofeos {
+    margin-top: 30px;
+}
+
+.lista-trofeos {
+    list-style-type: none;
+}
+
+.lista-trofeos li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #ddd;
+}
+
+.noticias-relacionadas {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+.noticias-relacionadas h2 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.lista-noticias {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.noticia {
+    display: flex;
+    flex: 1;
+    min-width: 300px;
+    background-color: rgba(249, 249, 249, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.noticia img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.info-noticia {
+    padding: 12px;
+    flex: 1;
+}
+
+.info-noticia h3 {
+    font-size: 16px;
+    margin: 0 0 8px;
+    color: var(--dark-bg);
+}
+
+.info-noticia p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.info-noticia a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.info-noticia a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptación para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .equipo-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .equipo-header figure {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contenido-equipo {
+        flex-direction: column;
+    }
+
+    .alineaciones {
+        flex-direction: column;
+    }
+
+    .alineacion-local, .alineacion-visitante {
+        margin-bottom: 20px;
+    }
+
+    .noticia {
+        flex-direction: column;
+    }
+
+    .noticia img {
+        width: 100%;
+        height: 150px;
+    }
+}

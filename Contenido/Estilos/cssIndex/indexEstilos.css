@@ -1,0 +1,15 @@
+@import "../main.css";
+@import "indexMain.css";
+
+
+@import "indexHeader.css";
+@import "indexNav.css";
+@import "indexNoticias.css";
+
+
+@import "../section.css";
+@import "../aside.css";
+
+
+
+@import "../footer.css";

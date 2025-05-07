@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="deportes, fútbol, baloncesto, tenis, inicio de sesión, login, el corner">
+        <meta name="description" content="Inicio de sesión para El Corner - portal deportivo">
+        <meta name="author" content="El Córner by Jorge & Iago">
+        <title>El Corner - Inicio de Sesión</title>
+    
+        <link rel="stylesheet" href="./Estilos/cssLogin/loginEstilos.css">
+        <link rel="stylesheet" href="./Estilos/Estilos.css">
+        
+        <script type="text/javascript" src="./JavaScript/login.js"></script>
+    </head>
+    
+    
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- --------------------------------------------------    BODY    ----------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+    
+    
+    <body>
+         <!-- --------------------------------------------------    NAV    ------------------------------------------------------------ -->
+        <nav class="menu">
+            <input type="checkbox" id="toggle">
+        
+            <label for="toggle" class="opciones">
+                <img src="../Imagenes/elementos_pagina_web/barras.png" width="40" height="40" alt="Menu">
+            </label>
+        
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../Imagenes/elementos_pagina_web/logo.png" width="80" height="80" alt="ElCorner_Logo">
+                </a>
+                El Córner
+            </div>
+        
+            <ul class="list">
+                <li><a href="./Contenido/Deportes.html">Deportes</a></li>
+                <li><a href="./Contenido/Equipos.html">Equipos</a></li>
+                <li><a href="./Contenido/Resultados.html">Resultados</a></li>
+                <li><a href="./Contenido/Noticias.html">Noticias</a></li>
+                <li><a href="./Contenido/Multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav>
+    
+        <!-- MAIN CONTENT -->
+    <main>
+        <div class="login-container">
+            <div class="login-card">
+                <h2>Iniciar Sesión</h2>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="username">Usuario:</label>
+                        <input type="text" id="username" name="username" placeholder="Usuario..." >
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" placeholder="Contraseña...">
+                    </div>
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Recordarme</label>
+                        </div>
+                        <a href="./usuarios.html" class="forgot-password">¿Olvidaste tu contraseña?</a> 
+                    </div>
+                    <button type="submit" class="login-button" >Entrar</button>
+                </form>
+                
+                <div class="register-link">
+                    <p>¿No tienes cuenta? <a href="./usuarios.html" >Regístrate</a></p>
+                </div>
+            
+                <div class="social-login">
+                    <p>O inicia sesión con:</p>
+                    <div class="social-buttons">
+                        <button class="social-button facebook"  onmouseover="resaltarSocial(this)" onmouseout="quitarResaltadoSocial(this)"> Facebook</button>
+                        <button class="social-button google"    onmouseover="resaltarSocial(this)" onmouseout="quitarResaltadoSocial(this)"> Google</button>
+                        <button class="social-button twitter"   onmouseover="resaltarSocial(this)" onmouseout="quitarResaltadoSocial(this)"> Twitter</button>
+                        <h2 id="demo"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            const usernameInput = document.querySelector('#username');
+        
+            usernameInput.addEventListener('focus', function() {
+                this.placeholder = '';
+            });
+        
+            usernameInput.addEventListener('blur', function() {
+                if (!this.value) {
+                    this.placeholder = 'Usuario...';
+                }
+            });
+        
+            const passwordInput = document.getElementsByName('password')[0];
+        
+            passwordInput.addEventListener('focus', function() {
+                this.placeholder = '';
+            });
+        
+            passwordInput.addEventListener('blur', function() {
+                if (!this.value) {
+                    this.placeholder = 'Contraseña...';
+                }
+            });
+        
+            const botonEntrar = document.querySelectorAll('.login-button')[0];
+            
+            function resaltar() {
+                this.classList.add('.login-button:hover');
+            }
+        
+            function quitarResaltado() {
+                this.classList.remove('.login-button');
+            }
+        
+            loginButton.addEventListener('mouseover', resaltar);
+            loginButton.addEventListener('mouseout', quitarResaltado);
+        </script>
+        <!-- Asegúrate de enlazar tu CSS -->
+    
+    
+    
+    
+    </main>
+    
+    
+        <!-- FOOTER -->
+        <!-- --------------------------------------------------    FOOTER    ------------------------------------------------------------ -->
+        <footer>
+            <span class="copyright">&copy; 2025 El Corner - Todos los derechos reservados</span>
+            <span class="about-link"><a href="./aboutus.html">About Us</a></span>
+        </footer>
+    </body>
+</html>

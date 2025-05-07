@@ -1,0 +1,33 @@
+/* indexHeader.css */
+
+.cabeceraIndex {
+    text-align: center;
+    padding: 20px 0;
+
+    margin-top: 8px; 
+    margin-left: 8px; 
+    margin-right: 8px; 
+    
+    margin-bottom: -10px;
+    border-radius: 10px;
+
+    background-color: var(--secondary-color);
+    /* background-color: #f6894c   ; /* Opcional, para fondo */
+}
+
+.cabeceraIndex figure {
+    margin: 0;
+}
+
+.cabeceraIndex img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Grid general */
+.grid-container {
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}

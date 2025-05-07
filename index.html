@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="deportes, fútbol, baloncesto, tenis, noticias, resultados, multimedia, foro, mi primera página web">
+        <meta name="description" content="Página web sobre deportes">
+        <meta name="author" content="El Córner by Jorge & Iago">
+        <title>El Corner - index (Principal)</title>
+        <link rel="stylesheet" href="./Contenido/Estilos/cssIndex/indexEstilos.css">
+        <script type="text/javascript" src="./Contenido/JavaScript/index.js"></script>
+
+    </head>
+
+    <body>
+        <!-- --------------------------------------------------    HEADER    ------------------------------------------------------------ -->
+        <header class="cabeceraIndex">
+            <figure align="center">
+                <a href="./index.html">
+                    <img src="./Imagenes/elementos_pagina_web/logo.png" alt="ElCorner_Logo" width="200" height="200">
+                </a>
+            </figure>
+        </header>
+
+        <!-- --------------------------------------------------    NAV    ------------------------------------------------------------ -->
+        <nav class="menuIndex">
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="opciones" >
+                <img src="./Imagenes/elementos_pagina_web/barras.png" width="40" height="40" alt="Menu" onclick="fijarMenu()">
+            </label>
+
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./Imagenes/elementos_pagina_web/logo.png" width="80" height="80" alt="ElCorner_Logo">
+                </a>
+                El Córner
+            </div>
+
+            <ul class="list">
+                <li><a href="./Contenido/Deportes.html">Deportes</a></li>
+                <li><a href="./Contenido/Equipos.html">Equipos</a></li>
+                <li><a href="./Contenido/Resultados.html">Resultados</a></li>
+                <li><a href="./Contenido/Noticias.html">Noticias</a></li>
+                <li><a href="./Contenido/Multimedia.html">Multimedia</a></li>
+            </ul>
+
+            <div class="perfil">
+                <a href="./Contenido/login.html">
+                    <img src="./Imagenes/elementos_pagina_web/avatar.png" width="40" height="40" alt="Imagen_Perfil">
+                </a>
+            </div>
+        </nav>
+
+        <!-- --------------------------------------------------    MAIN (SECTION+)    ------------------------------------------------------------ -->
+        <div class="grid-container">
+
+            <!-- --------------------------------------------------    SECTION (NOTICIAS)    ------------------------------------------------------------ -->
+            <section id="breaking-news">
+                <h2>BREAKING NEWS</h2>
+                <article class="featured-news">
+                    <header class="news-content">
+                        <figure class="fuente-grande">
+                            <img src="./Imagenes/breaking_news/marcas/marca.png" width="24" height="24" alt="Imagen_OkDiario">
+                            <figcaption>Marca</figcaption>
+                        </figure>
+                        <div class="image-container">
+                            <figure class="equipo-noticia-grande">
+                                <img src="./Imagenes/breaking_news/logos/madrid.png" width="40" height="40" alt="Real Madrid">
+                            </figure>
+                            <figure class="noticia-grande">
+                                <img src="./Imagenes/breaking_news/madrid2.jpg" alt="Real Madrid">
+                            </figure>
+                        </div>
+                        <a href="https://okdiario.com/diariomadridista/real-madrid/izquierda-radical-rabia-contra-dani-carvajal-dar-pregon-fiestas-san-isidro-522726" class="news-title">
+                            Fran González, el quinto portero más joven en debutar con el Madrid, contra la 'maldición' del estreno
+                        </a>
+                        <time class="time">Hace 6 horas</time>
+                    </header>
+                    <div class="news-body">
+                        Con 19 años, 9 meses y 10 días es el más joven en debutar desde Iker Casillas.
+                    </div>
+                </article>
+
+
+                <div class="regular-news-container">
+                    <!-- Noticia 1 Fila 2 (Pequeña) -->
+                    <article class="regular-news">
+                        <header class="news-content">
+                            <figure class="fuente">
+                                <img src="./Imagenes/breaking_news/marcas/marca.png" width="20" height="20" alt="Imagen_Marca">
+                                <figcaption>Marca.com</figcaption>
+                            </figure>
+                            <div class="image-container">
+                                <figure class="equipo-noticia">
+                                    <img src="./Imagenes/breaking_news/logos/juventus.png" alt="Juventus">
+                                </figure>
+                                <figure class="noticia">
+                                    <img src="./Imagenes/breaking_news/juventus1.jpg" alt="Juventus">
+                                </figure>
+                            </div>
+                            <a href="https://www.marca.com/futbol/liga-italiana/2025/03/31/juventus-pierde-gatti-fractura-compuesta-perone.html" class="news-title">
+                                La Juventus pierde a Gatti por una fractura compuesta de peroné
+                            </a>
+                            <time class="time">Hace 13 horas</time>
+                        </header>
+                        <div class="news-body">
+                            El defensa, titularísimo, se lesionó ante el Genoa y estará fuera un mes 
+                        </div>
+                    </article>
+
+
+                    <article class="regular-news">
+                        <header class="news-content">
+                            <figure class="fuente">
+                                <img src="./Imagenes/breaking_news/marcas/asdiario.png" width="20" height="20" alt="Imagen_AS">
+                                <figcaption>Diario AS</figcaption>
+                            </figure>
+                            <figure class="equipo-noticia">
+                                <img src="./Imagenes/breaking_news/logos/albacete.png" width="120" height="120" alt="Albacete">
+                            </figure>
+                            <figure class="noticia">
+                                <img src="./Imagenes/breaking_news/albacete1.jpg" width="120" height="120" alt="Noticia Albacete 1">
+                            </figure>
+                            <a href="https://as.com/futbol/segunda/aprobados-y-suspensos-del-albacete-ante-el-castellon-n/" class="news-title">
+                                Aprobados y suspensos del Albacete ante el Castellón.
+                            </a>
+                            <time class="time">Hace 20 horas</time>
+                        </header>
+                        <div class="news-body">
+                            El equipo manchego sigue en su buena línea: resistencia para sumar un punto y seguir la buena dinámica.
+                        </div>
+                    </article>
+
+
+                    <article class="regular-news">
+                        <header class="news-content">
+                            <figure class="fuente">
+                                <img src="./Imagenes/breaking_news/marcas/okdiario.png" width="20" height="20" alt="Imagen_Marca">
+                                <figcaption>Okdiario.com</figcaption>
+                            </figure>
+                            <figure class="equipo-noticia">
+                                <img src="./Imagenes/breaking_news/logos/madrid.png" width="120" height="120" alt="Real Madrid">
+                            </figure>
+                            <figure class="noticia">
+                                <img src="./Imagenes/breaking_news/madrid1.jpg" width="120" height="120" alt="Noticia Madrid 2">
+                            </figure>
+                            <a href="https://www.marca.com/futbol/real-madrid/2025/04/05/fran-gonzalez-quinto-portero-joven-debutar-madrid-maldicion-estreno.html" class="featured-title">
+                                La izquierda radical rabia contra Dani Carvajal por dar el pregón de las fiestas de San Isidro                        
+                            </a>
+                            <time class="time">Hace 15 horas</time>
+                        </header>
+                        <div class="news-body">
+                            A la izquierda radical no le ha gustado nada que Dani Carvajal, una leyenda del fútbol español y madrileño universal, vaya a dar el pregón que inaugurará las fiestas de San Isidro de este año 2025. El futbolista del Real Madrid, que se recupera de la lesión de gravedad que sufrió al inicio de esta temporada, es una de las figuras deportivas más reconocidas a nivel mundial, pero la extrema izquierda rabia ahora por esta lógica elección.
+                        </div>
+                    </article>
+
+
+                    <article class="regular-news">
+                        <header class="news-content">
+                            <figure class="fuente">
+                                <img src="./Imagenes/breaking_news/marcas/asdiario.png" width="20" height="20" alt="Imagen_AS">
+                                <figcaption>Diario AS</figcaption>
+                            </figure>
+                            <figure class="equipo-noticia">
+                                <img src="./Imagenes/breaking_news/logos/Barcelona.png" width="120" height="120" alt="Juventus">
+                            </figure>
+                            <figure class="noticia">
+                                <img src="./Imagenes/breaking_news/barca1.jpg" width="120" height="120" alt="Noticia Juventus 2">
+                            </figure>
+                            <a href="https://as.com/futbol/primera/se-cae-inigo-martinez-entra-christensen-n/" class="news-title">
+                                Se cae Iñigo Martínez, entra Christensen.
+                            </a>
+                            <time class="time">Hace 18 horas</time>
+                        </header>
+                        <div class="news-body">
+                            Christensen entra en una convocatoria ocho meses después, mientras que Iñigo Martínez se cae por molestias en los isquiotibialesy pensando en el partido de Champions contra el Dortmund.
+                        </div>
+                    </article>
+                
+                    <article class="regular-news">
+                        <header class="news-content">
+                            <figure class="fuente">
+                                <img src="./Imagenes/breaking_news/marcas/marca.png" width="20" height="20" alt="Imagen_Marca">
+                                <figcaption>Marca.com</figcaption>
+                            </figure>
+                            <figure class="equipo-noticia">
+                                <img src="./Imagenes/breaking_news/logos/Celta.png" width="120" height="120" alt="celta">
+                            </figure>
+                            <figure class="noticia">
+                                <img src="./Imagenes/breaking_news/celta1.jpg" width="120" height="120" alt="Noticia Celta 1">
+                            </figure>
+                            <a href="https://www.marca.com/futbol/celta/2025/04/03/abel-caballero-le-exijo-louzan-incluya-vigo-sede-mundial.html" class="news-title">
+                                Abel Caballero: "Le exijo a Louzán que incluya a Vigo como sede del Mundial".
+                            </a>
+                            <time class="time">Hace 1 día.</time>
+                        </header>
+                        <div class="news-body">
+                            El alcalde vigués mantiene su pulso con el presidente de la Federación.
+                        </div>
+                    </article>
+                
+                    <article class="regular-news">
+                        <header class="news-content">
+                            <figure class="fuente">
+                                <img src="./Imagenes/breaking_news/marcas/asdiario.png" width="20" height="20" alt="Imagen_AS">
+                                <figcaption>Diario AS</figcaption>
+                            </figure>
+                            <figure class="equipo-noticia">
+                                <img src="./Imagenes/breaking_news/logos/Barcelona.png" width="120" height="120" alt="betis">
+                            </figure>
+                            <figure class="equipo-noticia">
+                                <img src="./Imagenes/breaking_news/logos/Betis.png" width="120" height="120" alt="betis">
+                            </figure>
+                            <figure class="noticia">
+                                <img src="./Imagenes/breaking_news/betis1.jpg" width="120" height="120" alt="Noticia Betis 1">
+                            </figure>
+                            <a href="https://okdiario.com/deportes/barcelona-betis-esperar-ganar-14561523" class="news-title">
+                                Barcelona-Betis: Esperar y ganar.
+                            </a>
+                            <time class="time">Hace 20 horas</time>
+                        </header>
+                    </article>
+                </div>
+            </section>
+
+            <!-- --------------------------------------------------    ASIDE (RESULTADOS)    ------------------------------------------------------------ -->
+            <aside id="resultados">
+                <h2>RESULTADOS</h2>
+                <h3>JORNADA 4</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Equipo Local</th>
+                            <th>Resultado</th>
+                            <th>Equipo Visitante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cádiz CF</td>
+                            <td>3 - 1</td>
+                            <td>Villarreal CF</td>
+                        </tr>
+                        <tr>
+                            <td>UD Almería</td>
+                            <td>2 - 3</td>
+                            <td>RC Celta</td>
+                        </tr>
+                        <tr>
+                            <td>Real Sociedad</td>
+                            <td>5 - 3</td>
+                            <td>Granada CF</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>JORNADA 4</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Equipo Local</th>
+                            <th>Resultado</th>
+                            <th>Equipo Visitante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cádiz CF</td>
+                            <td>3 - 1</td>
+                            <td>Villarreal CF</td>
+                        </tr>
+                        <tr>
+                            <td>UD Almería</td>
+                            <td>2 - 3</td>
+                            <td>RC Celta</td>
+                        </tr>
+                        <tr>
+                            <td>Real Sociedad</td>
+                            <td>5 - 3</td>
+                            <td>Granada CF</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>JORNADA 4</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Equipo Local</th>
+                            <th>Resultado</th>
+                            <th>Equipo Visitante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cádiz CF</td>
+                            <td>3 - 1</td>
+                            <td>Villarreal CF</td>
+                        </tr>
+                        <tr>
+                            <td>UD Almería</td>
+                            <td>2 - 3</td>
+                            <td>RC Celta</td>
+                        </tr>
+                        <tr>
+                            <td>Real Sociedad</td>
+                            <td>5 - 3</td>
+                            <td>Granada CF</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+        </div>
+
+
+
+
+
+    </body>
+
+    <!-- --------------------------------------------------    FOOTER    ------------------------------------------------------------ -->
+    <footer>
+        <span class="copyright">&copy; 2025 El Corner - Todos los derechos reservados</span>
+        <span class="about-link"><a href="./Contenido/AboutUs.html">About Us</a></span>
+    </footer>
+
+    <script>
+        function fijarMenu() {
+            var menu = document.getElementsByClassName("menuIndex")[0];
+
+            if (menu.style.position === "fixed") {
+                menu.style.position = "sticky";
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            } 
+            else {
+                menu.style.position = "fixed";
+                window.scrollTo({
+                    top: 210,
+                    behavior: "smooth"
+                });
+            }
+        } 
+    </script>  
+</html>

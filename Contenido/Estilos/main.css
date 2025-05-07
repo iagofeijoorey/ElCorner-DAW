@@ -1,0 +1,63 @@
+main {
+    margin-top: 110px;
+    flex: 1; /* Hace que el main ocupe todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-image: linear-gradient(#29a5d3, #f6894c);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+}
+
+.container {
+    flex: 1; /* Hace que el contenedor ocupe todo el espacio disponible dentro del main */
+}
+
+
+/* Estilos para la sección de noticias */
+
+.imagenEquipo {
+    display: inline-block;  
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;  
+    margin-bottom: 20px;
+    
+}
+
+div.row {
+    margin: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.col-sm-4 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: dashed;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(255, 58, 83);
+}
+
+p {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: dashed;
+    text-align: justify;
+    line-height: normal;
+}
